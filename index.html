@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Raehaan Awan</title>
     <style>
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: 'Times New Roman', serif; /* changed font to Times New Roman */
             scroll-behavior: smooth;
+            background-color: #B3B3B3;
         }
 
         .faded {
@@ -83,7 +84,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#landing">Raehaan Awan<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -93,6 +94,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#internships">Internships</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#courses">Courses</a>
@@ -105,10 +109,10 @@
     </nav>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm Raehaan!</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
+            <h5 class="display-5 mx-auto faded text-center">I'm a Senior Information Science & Technology Student at Temple
                 University.</h5>
         </div>
         <div class="row my-4">
@@ -132,6 +136,8 @@
                     title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
                     title="MongoDB" /></div>
 
+        <!-- Original 3 directory buttons
+
         </div>
         <div class="row my-4">
             <div class="col">
@@ -144,11 +150,57 @@
                 <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
             </div>
         </div>
-        <div class="row mt-5 next">
-            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Projects"></i></a> </div>
+
+        -->
+        <!--    One of two new bootstrap components, used Card component in replacement of basic buttons. -->
+        <div class="row my-4">
+            <div class="card" style="width: 18rem; background-color: #B3B3B3;">
+                <img src="images/projects.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Projects</h5>
+                <p class="card-text">Click the button if you want to know more about my project experience!</p>
+                <a href="#projects" class="btn btn-primary">Go to Projects</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; background-color: #B3B3B3;">
+                <img src="images/internships.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Internships</h5>
+                <p class="card-text">Click the button if you want to know more about my internship experience!</p>
+                <a href="#internships" class="btn btn-primary">Go to Internships</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; background-color: #B3B3B3;">
+                <img src="images/courses.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Courses</h5>
+                <p class="card-text">Click the button if you want to see some of the relevant courses I have taken at Temple!</p>
+                <a href="#courses" class="btn btn-primary">Go to Courses</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; background-color: #B3B3B3;">
+                <img src="images/contacts.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text">Click the button if you want to see my Contact Information!</p>
+                <a href="#contact" class="btn btn-primary">Go to Contact Info</a>
+                </div>
+            </div>
+
+        </div> 
+
+        
 
     </div>
+
+    <div class="row mt-5 next">
+        <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                title="Projects"></i></a> 
+    </div>
+
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
@@ -157,50 +209,101 @@
             <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
         </div>
         <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
+            <h5>Digital Equity Center Support Desk Tracking System</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
+            <p class="text-justify">One of the projects I had worked on had been for the Digital Equity Center (DEC) who had been looking for a community relations - support desk ticketing
+                system. This project had been started during the Spring 2022 Semester and was planned to conclude in December 2022. The project had included developing a new support desk tracking system which the DEC
+                will be able to utilize to track their assets that they have supplied to nearby communities. The DEC's goal is to supply low-income / technologically inadequate homes with 
+                reliable access to internet through the use of donated laptops. The end-users may find issues with their laptops as they have not used laptops extensively prior to this which 
+                is why the DEC finds it imperative to incorporate a new support desk tracking system so that the end-users can find adequate help for their assets. The project is ongoing and only within the initial planning stages currently
+                , as it develops the updates will be posted here.</p>
         </div>
         <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
+            <h5>Kitty Tinder</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
+            <p class="text-justify"> Another project I had worked on in a previous course, specifically CIS-3344 or Client Side Web Devleopment, was "Kitty Tinder". The website was only built out visually and had essentially no major functions
+                since it was in a prototype stage. There were some minimal functionalities which we had added over the course of the semester but generally the point of the project was to show off our skills learned within the course.
+                Some of the skills had included searchable visually aesthetic databases or as Professor K had referred to them as "ClickSortable". Click the DropDown Button below to navigate to the website! </p>
+                 
+                <!-- Second Component that I had incorporated that was not originally on the page.-->
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="http://cis-linux2.temple.edu:8080/fa21_3344_tuj43590/03_using_NavRouter/index.html#/home">Kitty Tinder</a>
+                    </div>
+                </div>  
+        </div>
+
+       
+
+        
+        
+
+        <div class="row w-100">
+            <h5>Battleship</h5>
         </div>
         <div class="row w-100">
-            <h5>Query Dating Site</h5>
+            <p class="text-justify"> Another project that I had worked on throughout my tenure at Temple University was also during last semester, Fall 2021. The project had been for my CIS 3309 Component Based Software Design course at Temple University
+                and had involved us creating a board game of any sort. The project had been a partner project and for this project I had Aamir Contractor as my partner. The game was written entirely in C# and utilized the ASP.NET environment we were taught within the course.
+                This was one of the more challenging projects I had tackled as it had involved the entire start to finish of creating an extensive program. This process had included creating multiple UML diagrams, including UML Use Case Diagrams, Swim Lane Diagrams and various other diagrams.
+                The project in its finality would allow you to play the original battleship board game against a CPU player in which you would select cells to put the ship and then the CPU would randomly fire. The game would continue back and forth until one player
+                had all of their ships destroyed. </p>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#internships" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Internships"></i></a> </div>
+    </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="internships">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Internships</h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked at some neat places.</h5>
         </div>
         <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
+            <h5>Meditology - ITRM Intern</h5>
         </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify"> My most recent internship is also my current internship where I am working at as an ITRM Intern at Meditology Services. Meditology Services specializes in performing Security Risk Asssessments for Healthcare companies and Medical Providers along with
+                their sister company CORL. As an ITRM Intern I generally work in a client-faced environment where the clients are the various medical companies that Meditology works with. I generally just aid in the the various project management tasks such as creating meeting minutes, meeting agendas
+                and executive summaries as I have only started earlier this year. My current assignments involve me attending Client Security Risk Assessment (SRA) Interviews where we gather evidence and documentation from the clients on various security domains to ensure that their security systems are up to code across a variety of domains.
+
+            </p>
+        </div>
+        <div class="row w-100">
+            <h5>Iovance Biotherapeutics - Help Desk Intern</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify"> 
+                Another Internship which I had during Summer of 2021 was as a IT Help Desk Intern for Iovance Biotherapeutics where I had been working remotely while the company was based in San Carlos, CA. The company was working on TIL Therapy which was a form of Cancer therapy and would essentially be a cure for certain types of cancer.
+                This experience had peaked my interest as prior to being an IST Major I had been a Pre-Medical Major and had shadowed at the Oncology Department at Jefferson Hospital of Torresdale. I figured this position would be ideal for me as it had combined both Tech and the medical industry. The position was a great introductory Internship experience 
+                as it had introduced me to the industry as well as had taught basic industry and employment practices. The majority of the internship had been filled with busy work and lots of downtime but this was expected as it was my first real internship and I had little to no techncial experience. Typically the workload had involved me shadowing 
+                various members of the IT Support Team as they helped solve IT tickets for the company or I had handled some small tickets myself as well as aided in projects here and there such as the LDAP integration of Zendesk and EZOfficeInventory which had merged both the ticketing system and the asset management system into one environment which was constantly
+                updated. Overall the experience and connections I had made at Iovance were memorable and a great start to my career. 
+            </p>
+        </div>
+        
         <div class="row mt-5 next">
             <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
                     title="Courses"></i></a> </div>
     </div>
+
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
         </div>
         <div class="row mx-auto mb-4">
-            <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
+            <h5 class="display-5 mx-auto faded text-center">My courses at Temple's IST Program</h5>
         </div>
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
-                <h5>Information Systems Analysis and Design</h5>
+                <h5>IT Project Management </h5>
             </div>
             <div class="col text-center course">
                 <h5>Server-Side Web Application Development</h5>
@@ -231,14 +334,14 @@
             <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
+            <h5 class="display-5 mx-auto faded text-center">Check out my social links! </h5>
         </div>
         <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
+            <a href="mailto:tuj43590@temple.edu" class="col mx-3"><i class="fas fa-envelope-square"
                     data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
+            <a href="https://www.linkedin.com/in/raehaan-awan/" class="col mx-3"><i class="fab fa-linkedin"
                     data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
+            <a href="https://github.com/RBALLER26" class="col mx-3"><i class="fab fa-github-square"
                     data-toggle="tooltip" data-placement="top" title="Github"></i></a>
 
         </div>
